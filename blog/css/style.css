@@ -1,24 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
 html {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: #CCC;
+    background: #FFF;
     margin: 0;
     padding: 0;
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 26px;
+
 }
 
-#wrapper {
+
+#header {
+    height: 400px;
+    overflow: hidden;
+    background-size: cover;
+}
+.page-title {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 140px 0 0 0;
+}
+
+#middle {
     width: 960px;
     background: #FFF;
     margin: 0 auto;
+    padding: 40px 0 40px 0;
+}
 
-}
-.header {
-    height: 300px;
-    overflow: hidden;
-}
 .content {
     width: 650px;
     display: inline-block;
@@ -37,9 +53,64 @@ body {
 
 .post {
     border-bottom: 1px solid #CCC;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 h1 {
-
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #333;
 }
 
+h2{
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 300;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h4{
+    font-weight: 900;
+    margin-top: 0px;
+}
+p {
+    color: #666;
+}
+p.post-type {
+    color: #333;
+    font-size: 12px;
+    color: #333;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+a {
+color: #289673;
+}
+
+.sidebar ul {
+    list-style: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+.sidebar li {
+    color: #666;
+    font-size: 12px;
+}
