@@ -1,0 +1,45 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #CCC;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 960px;
+    background: #FFF;
+    margin: 0 auto;
+
+}
+.header {
+    height: 300px;
+    overflow: hidden;
+}
+.content {
+    width: 650px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.header img {
+    width: 100%;
+}
+
+.post {
+    border-bottom: 1px solid #CCC;
+}
+
+h1 {
+
+}
+
