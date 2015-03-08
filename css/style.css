@@ -15,7 +15,6 @@ body {
 
 }
 
-
 #header {
     height: 400px;
     overflow: hidden;
@@ -29,7 +28,7 @@ ul.nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    
+
 
     padding: 20px;
 }
@@ -119,6 +118,9 @@ h4{
 p {
     color: #666;
 }
+li {
+    color: #666;
+}
 p.post-type {
     color: #333;
     font-size: 12px;
@@ -145,8 +147,9 @@ color: #3bd6a2;
     color: #666;
     font-size: 12px;
 }
-.sidebar h3 {
-    font-size: 18px;
+h3 {
+    font-size: 22px;
+    font-weight: 500;
 }
 .profile {
 

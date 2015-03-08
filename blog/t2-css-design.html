@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Positioning - JugglerX GitHub</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body>
+
+<div id="header" style="background-image: url('../images/pinetrees.jpeg');">
+  <div class="navigation">
+    <ul class="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" >Blog</a></li>    </ul>
+  </div>
+    <div class="page-title">
+       <h1>Dev Bootcamp / <span class="title-light">Robert Austin</a></h1>
+    </div>
+</div>
+
+<div id="middle">
+    <div class="content">
+
+      <div class="post">
+
+ <h2>CSS Positioning</h2>
+     <p class="post-type">March 9th 2015 / Technical Blog</p>
+
+    <p>Relative, absolute and fixed positioning are probably one of the more difficult concepts to grasp in CSS, so here's my take on things.</p>
+
+    <p>Typical code to position some using absolute positioning might look like this.</p>
+    <pre>
+    <code>
+      div {
+          position: absolute;
+          top: 300px;
+          left: 300px;
+      }
+    </code>
+    </pre>
+
+    <p>Divs by default are display: block; and position: static; they will follow the document flow and each form their own line. In general think of all elements as static; p tags or h1 tags etc (thou they do have different default display values</p>
+
+    <p><strong>position: relative;</strong> is the first level of positioning. Applying position: relative; to an element allows you to position it using top, right, left, bottom. For example top: 40px;. It also enables z-index, which allows you to control the stackng order of the element.</p>
+
+    <p><strong>position: absolute;</strong> has the same qualities of position relative with one key difference. It takes it's position from the nearest parent in the DOM with position relative. This is often desirable as it can give you more accurate control when positioning a nested div's deep within a wrapper.</p>
+
+    <p><strong>position: fixed;</strong> positions the element relative to the viewport (the edge of the page) and It remains "fixed" when you scroll. It has limited utility and is generally used for fixed navigation bars at the top of a page (you know when you scroll the menu stays on top)</p>
+
+    <p>Position is powerful, and is useful because it enables z-index and allows you to stack. But otherwise it should be used with caution and is not a replacement for more core positioning properties like margin, padding, display and float </p>
+
+    <h3>When should I Use Position?</h3>
+    <p>You should not need to declare a position value or use top, right, bottom, left for general layout. Margin, padding, float and display are the correct tools for structutural layout. This is because they do not disrupt the document flow.</p>
+    <p>Positioning is normally used when you need to use stacking. Positioning enables the z-index. So if you need to stack a div something under or over another div then it's time for positioning</p>
+
+    <h3>Document Flow</h3>
+    <p>The biggest weakness and strength of position (besides z-index) is how it removes the element from the normal document flow. Remember that when you enable position relative and set a position or when you enable position absolute (with or without a position) you remove the element from the document flow. This means it wont "push" other content down the page. That normally breaks layouts, especially if the content is dynamic or via a CMS.</p>
+
+    <h3>Handle With Care</h3>
+      <p>Absolute positioning in particular should be handled with care. Always take a moment to consider if absolute positioning is really required. Could you change the design? Can you re-factor the markup so you can use margin and float? Can you use background images? etc</p>
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="sidebar">
+      <h3>Recent Posts</h3>
+       <ul>
+         <li><a href="t2-css-design.html">CSS Positioning</a> / March 8th 2015</li>
+        <li><a href="c1-chefs-kitchen.html">The DBC Culture</a> / March 1st 2015</li>
+        <li><a href="t1-git-blog.html">Like A Version</a> / February 27th 2015 </li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+</body>
+</html>
