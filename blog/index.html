@@ -4,6 +4,9 @@
   <title>JugglerX GitHub - Blog</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/prism.css">
+<script src="../js/prism.js"></script>
+
 
 </head>
 <body>
@@ -12,7 +15,7 @@
   <div class="navigation">
     <ul class="nav">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="blog/index.html"  class="active">Blog</a></li>
+      <li><a href="index.html"  class="active">Blog</a></li>
     </ul>
   </div>
     <div class="page-title">
@@ -22,7 +25,100 @@
 
 <div id="middle">
     <div class="content">
+ <div class="post">
 
+            <h2>Thinking Style</h2>
+            <p class="post-type">March 15th 2015 / Culture Blog</p>
+
+
+<p>How do I Think? And how is it affecting my learning competency so far at DBC?</p>
+
+<p>Well according to the "test" they made me take, I'm a multi modal learner. But I don't really put much stock in those 10 minute pseudo psych tests where you can tell how each answer will classify you.</p>
+
+<p>So I'm just going to walk you through how I solve a typical problems, specifically in software and design. These might not be nirvana inspiring revelations here, but it's 9am Monday morning.</p>
+
+<p>Normally when I presented with new problems I judge weather I can tackle the problem using previous knowledge, educated guesses and trial and error.</p>
+
+<blockquote><p>
+    These might not be nirvana inspiring revelations here, but it's 9am Monday morning.</p>
+</blockquote>
+
+<p>Once I hit a wall, I'll Google the problem or occasionally ask a peer whom I feel may have that knowledge (and isn't busy) - </p>
+<p>When Googling I take care to frame the problem specifically and try to use the correct terminology. So I consider being able to identify and articulate the problem very important to effective learning. Often If I cannot articulate the problem I will shift from researching the direct problem and read a spread of information before returning to the problem at hand. </p>
+
+<p>I prefer results with documentation, written tutorials and code examples to learn from. I don't like videos or audio, because it's much harder to control the pace (ie skip over the first few paragraphs because you know that bit already) and videos are just not tangible like pages. You can't copy text, or snippets. You can't inspect the page or the source files etc. These things are really helpful for learning to code.</p>
+
+<p>I also learn from Q&A, but often I become frustrated because sometimes I cannot control my learning direction (even if it's the wrong direction). I often find when learning by asking I move backwards and start too broad, then become fixated on narrow details. I've often thought about this. I think when I try to understand something I cant just mimic a step in the middle, because I consider that useless copying. So I try to draw as much context as I can initially and then validate concepts by checking several different details work.</p>
+
+<p>I will think more on my learning style in Q&A situations. I think this is an important area of growth for me. I am actively aware of keeping a growth mindset and would like to improve several of my learning styles over the course of DBC. Let's start with Q&A.</p>
+
+
+        </div>
+
+<div class="post">
+
+            <h2>Yarrr, Arrays & Hashes</h2>
+            <p class="post-type">March 15th 2015 / Technical Blog</p>
+
+            <p>Arrays and hashes store collections of objects. Objects in the array can then be accessed in various ways depending on your requirements.</p>
+
+
+            <p>The items in an array or has can be strings, integers even another array. Pretty much anything which is an object can be stored in an array. </p>
+
+
+            <p>Arrays are always made of key:value pairs. In an Array the key is a sequentially assigned integer. Hashes allow the key to be defined by the user.</p>
+
+            <p>Let's look at some examples of creating, reading and accessing an Array</p>
+
+            <h3>Arrays</h3>
+            <p><strong>Creating an Array</strong> You can create an array several ways.</p>
+<pre><code class="language-ruby">
+# Create Array literal
+array = []
+# Create Array Explicit
+array = Array.new</code>
+</pre>
+            <p><em>Unfortunately at this point I cannot tell if literal or explicit is better, or why you would use one over the other. My very basic understanding is that the literal invocation is simple a shortcut for the explicit. In practice, so far, I have just used the literal invocation.</em></p>
+
+            <p><strong>Example Array with key:value pairs shown below</strong></p>
+<pre>
+<code class="language-ruby">array = [1,2,3,"cat","dog","pig"]
+# array keys [0,1,2,3,4,5]
+# array values: [1,2,3,"cat","dog","pig"]</code>
+</pre>
+<p><em>Note: In an array the index begins at 0.</em></p>
+
+
+<p><strong>Accessing an object in the array</strong></p>
+
+<pre><code class="language-ruby">
+array[0]
+# Would access the Array index 0 (the key) and return an integer value of 1
+array[3]
+# Would access the Array index 3 (the key) and return an string value of "cat"</code>
+</pre>
+
+
+<h3>Hashes</h3>
+<p>Hashes are similar to arrays but as mentioned earlier you can define the <strong>key</strong> as well as the value. Perhaps this is useful when more semantic data storage and lookup is a requirement.</p>
+<p><strong>Create a new Hash</strong></p>
+<pre><code class="language-ruby">
+hash = Hash.new()</code>
+</pre>
+
+<p><strong>Example Hash</strong></p>
+<pre><code class="language-ruby">hash = {
+    "Galaxy" => "cat"
+    "Minty" => "dog"
+    "Arty" => "dog"
+}</code>
+</pre>
+<p><strong>Access a Hash</strong></p>
+<pre><code class="language-ruby">
+hash["Galaxy"] #=> cat
+# Would access the Hash index "Galaxy" (the key) and return a string value of "cat"</code></pre>
+
+        </div>
 
       <div class="post">
 
@@ -32,19 +128,20 @@
     <p>Relative, absolute and fixed positioning are probably one of the more difficult concepts to grasp in CSS, so here's my take on things.</p>
 
     <p>Typical code to position some using absolute positioning might look like this.</p>
-    <pre>
-    <code>
-      div {
-          position: absolute;
-          top: 300px;
-          left: 300px;
-      }
-    </code>
-    </pre>
+
+
+<pre>
+<code class="language-css">
+div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}</code>
+</pre>
 
     <p>Divs by default are display: block; and position: static; they will follow the document flow and each form their own line. In general think of all elements as static; p tags or h1 tags etc (thou they do have different default display values</p>
 
-    <p><strong>position: relative;</strong> is the first level of positioning. Applying position: relative; to an element allows you to position it using top, right, left, bottom. For example top: 40px;. It also enables z-index, which allows you to control the stackng order of the element.</p>
+    <p><strong>position: relative;</strong> is the first level of positioning. Applying position: relative; to an element allows you to position it using top, right, left, bottom. For example top: 40px;. It also enables z-index, which allows you to control the stacking order of the element.</p>
 
     <p><strong>position: absolute;</strong> has the same qualities of position relative with one key difference. It takes it's position from the nearest parent in the DOM with position relative. This is often desirable as it can give you more accurate control when positioning a nested div's deep within a wrapper.</p>
 
@@ -128,6 +225,8 @@
 
         <h3>Recent Posts</h3>
        <ul>
+        <li><a href="c3-thinking-style.html">Thinking Style</a> / March 15th 2015</li>
+        <li><a href="t3-arrays-hashes.html">Yarrr, Arrays & Hashes</a> / March 15th 2015</li>
          <li><a href="t2-css-design.html">CSS Positioning</a> / March 8th 2015</li>
         <li><a href="c1-chefs-kitchen.html">The DBC Culture</a> / March 1st 2015</li>
         <li><a href="t1-git-blog.html">Like A Version</a> / February 27th 2015 </li>
@@ -137,6 +236,7 @@
 
 
   </div>
+
 
 </body>
 </html>

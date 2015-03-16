@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 
 html {
     margin: 0;
@@ -118,6 +119,9 @@ h4{
 p {
     color: #666;
 }
+strong {
+    color: #333;
+}
 li {
     color: #666;
 }
@@ -137,6 +141,22 @@ a {
 a:hover {
 color: #3bd6a2;
 }
+
+blockquote {
+    letter-spacing: -1px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #3bd6a2;
+    float: right;
+    width: 300px;
+    margin-right: -150px;
+    font-family: "Lora";
+    font-weight: 400;
+}
+blockquote p {
+    color: #3bd6a2;
+
+}
 .sidebar ul {
     list-style: none;
     list-style-position: inside;
@@ -148,7 +168,8 @@ color: #3bd6a2;
     font-size: 12px;
 }
 h3 {
-    font-size: 22px;
+    font-size: 28px;
+    line-height: 32px;
     font-weight: 500;
 }
 .profile {
