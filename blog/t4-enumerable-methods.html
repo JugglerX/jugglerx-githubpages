@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby .map Method - JugglerX GitHub</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <link rel="stylesheet" type="text/css" href="../css/prism.css">
+
+<script src="../js/prism.js"></script>
+
+
+</head>
+<body>
+
+<div id="header" style="background-image: url('../images/pinetrees.jpeg');">
+  <div class="navigation">
+    <ul class="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" >Blog</a></li>    </ul>
+  </div>
+    <div class="page-title">
+       <h1>Dev Bootcamp / <span class="title-light">Robert Austin</a></h1>
+    </div>
+</div>
+
+<div id="middle">
+    <div class="content">
+        <div class="post">
+
+            <h2>Ruby .map Method</h2>
+            <p class="post-type">March 22nd 2015 / Technical Blog</p>
+
+            <p>Ruby provides various methods to iterate over arrays and hashes. The array and hash classes both come with the <code class="language-none">#each</code> method which you are probably familiar with.</p>
+
+            <p>But there are several other powerful methods available, they are called enumerable methods such as <code class="language-none">#map</code>, <code class="language-none">#select</code> and <code class="language-none">#group_by</code>. They are available to the <code class="language-none">Array</code> and <code class="language-none">Hash</code> classes via the <a href="http://ruby-doc.org/core-2.1.5/Enumerable.html">Enumerable Module.</a>
+
+            <p>Ive decided to review <code class="language-none">#map</code> because I've used it in several of my solutions this week. Review the <a href="http://ruby-doc.org/core-2.1.5/Enumerable.html#method-i-map">Ruby documentation for map</a></p>
+
+            <p>The map method provides a powerful and consice way to re-build (re-map) an array based on certain conditions. </p>
+
+            <p><strong>Using .map to re-build an array and perform logic on each iteration</strong></p>
+<pre><code class="language-ruby">
+array = [1,2,3,4]
+array.map { |i| i * i }
+#=> [1, 4, 9, 16]</code>
+</pre>
+
+ <p><strong>Using .map in a chain of methods. Split a single number into an array and perform logic on each iteration</strong></p>
+<pre><code class="language-ruby">
+def number_split(number)
+  number.to_s.split("").map {|i| i = "Number " + x }
+end
+
+number_split(28434)
+#=> ["Number 2", "Number 8", "Number 4", "Number 3", "Number 4"]</code>
+</pre>
+
+
+        </div>
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>
