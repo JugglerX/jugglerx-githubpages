@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classes - JugglerX GitHub</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <link rel="stylesheet" type="text/css" href="../css/prism.css">
+
+<script src="../js/prism.js"></script>
+
+
+</head>
+<body>
+
+<div id="header" style="background-image: url('../images/pinetrees.jpeg');">
+  <div class="navigation">
+    <ul class="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" >Blog</a></li>    </ul>
+  </div>
+    <div class="page-title">
+       <h1>Dev Bootcamp / <span class="title-light">Robert Austin</a></h1>
+    </div>
+</div>
+
+<div id="middle">
+    <div class="content">
+        <div class="post">
+
+            <h2>Classes</h2>
+            <p class="post-type">March 29th 2015 / Technical Blog</p>
+
+            <p>Classes are like groups. Classes allow you to define methods and variables inside of them and reuse them across multiple objects.</p>
+
+            <p>Typically you would write a new class like so.</p>
+
+<pre><code class="language-ruby">
+  class Person
+    def name
+      name = "Rob"
+    end
+  end</code></pre>
+          <p>You are then able to spawn new instances of that class object. These new objects have access to the methods and variables defined in the Class.<p>
+
+<pre><code class="language-ruby">
+  # Create new object which is an instance of the Person Class
+  new_customer = Person.new
+  p new_customer.name #=> "Rob"
+  </code></pre>
+
+          <p>So far, pretty easy right? You should be able to see the potenial of classes for everyday applications.</p>
+
+          <p>Let's add the ability to change the name variable and see what happens</p>
+
+<pre><code class="language-ruby">
+class Person
+  @first_name = ""
+  def first_name
+    @first_name
+  end
+  def change_first_name(name)
+    @first_name = name
+  end
+end
+
+new_customer = Person.new
+p new_customer.first_name #=> nil
+new_customer.change_name("Bob")
+p new_customer.first_name #=> "Bob"</code></pre>
+
+          <p>Now we've defined two methods in our class. One to display the first_name and the other to change it. We've also introduced a new type of variable @first_name which is called a class instance variable. The local variable we were using did not have enough scope to talk between the seperate methods #first_name and #change_first_name. </p>
+
+          <p>There is also a third variable called a class variable which looks like @@first_name. Class variables are inherited by new class instances and class instances of descendant classes. But if you change a class variable anywhere it will change everywhere, which may not be desirable.</p>
+
+          <p>Other important concepts that go with Classes are attributes, understanding class variables vs class instance variable scope and inheritence, understanding context and self and how that applies to class objects and the main class.</p>
+        </div>
+    </div>
+<div class="sidebar">
+     <ul>
+        <li><a href="index.html">Blog Index</a></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+</body>
+</html>
