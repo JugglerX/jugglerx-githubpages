@@ -26,7 +26,105 @@
 <div id="middle">
     <div class="content">
 
+<div class="post">
 
+            <h2>Variable Scope</h2>
+            <p class="post-type">Apr 5th 2015 / Technical Blog</p>
+
+            <p>Ruby has the following variables. Each variable type has a different <em>variable scope.</em></p>
+
+<pre><code class="language-ruby">
+  $global_var = 10
+  CONSTANT = 10
+  @@class_var = 10
+  @instance_var = 10
+  local_var = 10</code></pre>
+
+  <h3>Local Variables</h3>
+  <p>local variables have the most limited scope. They are limited to the method or loop in which they are declared. The location and depth of the local variable will determine inheritance. </p>
+
+  <pre><code class="language-ruby">
+def local
+    (1..5).each do |x|
+      var = x
+    end
+    p var #=> undefined local variable or method `var' for main:Object
+end</code></pre>
+
+  <p>If we declare the variable <code>var</code> above the loop it will be available to the entire method</p>
+
+ <pre><code class="language-ruby">
+def local
+    var = 0
+    (1..5).each do |x|
+      var = x
+    end
+    p var #=> 5
+end</code></pre>
+
+<h3>Class Variables</h3>
+  <p>A Class variable is available to all instances of the class.</p>
+
+  <pre><code class="language-ruby">
+class Ticket
+  def initialize(price)
+    @@price = price
+  end
+  def check_ticket_price
+    p @@price
+  end
+end
+ticket_one = Ticket.new(15)
+ticket_one.check_ticket_price #=> 15
+ticket_two = Ticket.new(10)
+ticket_one.check_ticket_price #=> 10
+
+ticket_two.check_ticket_price #=> 10</code></pre>
+
+<p>The downside to a class variable is that if <strong>any</strong> instance of the <code>Ticket</code> class updates the variable, it is updated everywhere. Not very useful for tickets with individual pricing is it?
+</p>
+
+
+<h3>Class Instance Variables</h3>
+  <p>A Class instance variable is unique to each instance of a class. This avoids the problem above.</p>
+
+  <pre><code class="language-ruby">
+class Ticket
+  def initialize(price)
+    @price = price
+  end
+  def check_ticket_price
+    p @price
+  end
+end
+ticket_one = Ticket.new(15)
+ticket_one.check_ticket_price #=> 15
+ticket_two = Ticket.new(10)
+ticket_one.check_ticket_price #=> 10
+
+ticket_two.check_ticket_price #=> 15</code></pre>
+
+<p>Now we can spawn as many individual tickets as we like, each with there own price.
+</p>
+
+<h3>Global Variables</h3>
+  <p>Global variables are accessible everywhere, no matter where they are declared.</p>
+
+  <pre><code class="language-ruby">
+def local
+    (1..5).each do |x|
+      $var = x
+    end
+end
+
+p $var #=> 5</code></pre>
+
+<p>Constants are the same as the $global_variable except when you try to change them they give you a warning.</p>
+
+
+
+
+        </div>
 
       <div class="post">
         <h2>Pairing & Feedback</h2>
@@ -362,6 +460,8 @@ div {
 
         <h3>Recent Posts</h3>
        <ul>
+        <li><a href="t6-oop-concepts.html">Variable Scope</a> / Apr 5th 2015</li>
+
         <li><a href="c5-feedback.html">Pairing & Feedback</a> / March 30th 2015</li>
         <li><a href="t5-ruby-classes.html">Classes</a> / March 29th 2015</li>
         <li><a href="c4-tech-issues.html">Regulation</a> / March 22nd 2015</li>

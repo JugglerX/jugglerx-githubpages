@@ -1,6 +1,10 @@
 # Class Variables
 
 class Person
+
+ def self.first_name
+    @first_name = "peter"
+end
   @first_name = "None"
   def first_name
     @first_name
@@ -12,6 +16,10 @@ end
 
 customerid1 = Person.new
 p customerid1.first_name
+
+Person.first_name
+
+
 customerid1.change_first_name("Bob")
 p customerid1.first_name
 
