@@ -26,6 +26,89 @@
 <div id="middle">
     <div class="content">
 
+
+        <div class="post">
+
+            <h2>Values</h2>
+            <p class="post-type">Apr 12th 2015 / Cultural Blog</p>
+
+            <p>When you think of the times in your life where you’ve been the happiest, the proudest, or the most satisfied, which of the following values come to mind?</p>
+
+            <p>ambition, creativiy, friendships, pleasure, justice, wisdom</p>
+
+            <p>Of these values do I try to live up to them? I try to. When I feel I have broken my core values, I do reflect.</p>
+
+            <p>Wisdom is important to me, because it distills reason, empathy and experience. From this position we can give great advice, judge ourselves with perspective and learn from our failures.</p>
+
+            <p>I last gave advice to a friend of mine who is trying to be a muscian (electronic music producer). He is very talented but never finishes his music and is not publishing his work. I felt I could offer advice because we both respect each other, and I have experienced the struggle of designing and building creative projects many times.</p>
+
+        </div>
+
+       <div class="post">
+
+            <h2>Ruby Hashes VS JavaScript Objects</h2>
+            <p class="post-type">Apr 12th 2015 / Technical Blog</p>
+
+            <p>This week we learnt beginner JavaScript. Initially going to JavaScript from Ruby was a bit of a jolt. But I think that's because I'd just got used to the Ruby syntax.</p>
+
+            <p>In JavaScript the workhorses seem to be functions and objects. JavaScript has only 1 variable type, and it's global, so you rely more on scope.</p> 
+
+            <p>Some of the obvious syntax differences in JavaScript are that most functions need to wrapped in parenthesis () and you need to terminate lines with semicolons ;</p>
+
+            <p>Ruby Hashes are similar to JavaScript Objects. JavaScript objects are declared as variables and contain key/value pairs.</p>
+
+            <p>In Ruby hashes were the used occasionally, and arrays were more common. Ruby hashes often seemed troublesome to access.</p>
+
+            <p>From my limited experience with JavaScript thus far it seems that JavaScript objects are commonly used. It may be that defining nested objects in JavaScript is clearer and adding, removing and accessing parameters just seems more natural. So we naturally use them more often.</p>
+
+<pre><code class="language-ruby">
+ruby_hash = { 
+  "a" => 1,
+  "b" => 1, 
+  "c" => 2 
+}</code></pre>
+
+<pre><code class="language-javascript">
+var javascriptHash = { 
+  a: 1,
+  b: 2,
+  c: 3
+}</code></pre>
+
+<p>What I liked about the JavaScript object was the ease in which you can create and read a nested data structure.</p>
+
+<pre><code class="language-javascript">
+var athlete = {
+  robert = {
+    name: "Robert",
+    height: 190,
+    sport: "Baseball",
+    quote: "Imma get you boy",
+    win: ""
+  }
+  chris = {
+    name: "Chris",
+    height: 170,
+    sport: "Baseball",
+    quote: "cant touch this",
+    win: ""
+  }
+}</code></pre>
+
+<p>Adding, removing or updating parameters in a Javascript is a breeze and has a nice syntax</p>
+
+<pre><code class="language-javascript">
+// Update the sport for the Athlete Robert
+athlete.robert.sport = "Bob";
+// Add a new paramter to the Athlete chris
+athlete.chris.eyecolor = "brown";
+</pre></code>
+
+
+
+
+</div>
+
       <div class="post">
 
             <h2>Stereotype Threat</h2>
@@ -486,6 +569,9 @@ div {
 
         <h3>Recent Posts</h3>
        <ul>
+        <li><a href="c7-values.html">Values</a> / Apr 12th 2015</li>
+        <li><a href="t7-JavaScript.html">Ruby Hashes VS JavaScript Objects</a> / Apr 12th 2015</li>
+
         <li><a href="c6-stereotype-threat.html">Stereotype Threat</a> / Apr 5th 2015</li>
         <li><a href="t6-oop-concepts.html">Variable Scope</a> / Apr 5th 2015</li>
 
