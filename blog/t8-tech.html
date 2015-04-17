@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How the Internet Works - JugglerX GitHub</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <link rel="stylesheet" type="text/css" href="../css/prism.css">
+
+<script src="../js/prism.js"></script>
+
+
+</head>
+<body>
+
+<div id="header" style="background-image: url('../images/pinetrees.jpeg');">
+  <div class="navigation">
+    <ul class="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="index.html" >Blog</a></li>    </ul>
+  </div>
+    <div class="page-title">
+       <h1>Dev Bootcamp / <span class="title-light">Robert Austin</a></h1>
+    </div>
+</div>
+
+<div id="middle">
+    <div class="content">
+        <div class="post">
+
+            <h2>How the Internet Works (Har Har)</h2>
+            <p class="post-type">Apr 17th 2015 / Technical Blog</p>
+
+            <p>As you know, the internet is not a big truck. It's not something you just dump something on. it's a series of tubes.</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/f99PcP0aFNE" frameborder="0" allowfullscreen></iframe>
+
+            <p>Well maybe the senator had a point in there somewhere... The internet is tangled web of connections, fibre backbones, ethernet, copper wire, satellite and wireless towers</p>
+
+            <p>How does all of that connect? How does information route through a network which is only semi planned and managed?</p>
+
+            <p>I'm just going to spitball a bit, and tell you how I think it works based on my experience in web design and IT. It's probably not completely accurate, but it might be helpful and it will certainly be interesting to put those thoughts to paper</p>
+
+            <p>For data to be accessible it has to be stored and exist somewhere. All data is stored and served by computer servers. The internet itself doesn't store the data (in a cloud?), it just connects servers with each other and that forms coalesces into the internet. </p>
+
+            <p>Each server available on the internet has an IP address. IP addresses probably look familiar - for example: 209.120.182.130. Thats how we access the data or interact with that server. We lookup it's IP address and send and receive commands.</p>
+
+            <p>Now you might think, how is there enough IP Addresses for all the servers in the world? That is made possible because IP Addresses can be subdivided. When they are subdivided you create networks inside of networks</p> 
+
+            <p>This allows each IP holder to create a massive network of IP Addresses within there own IP. So in a sense when you route to an IP Address you might route deep into multiple networks, not just the top level "internet"</p>
+
+            <p>For example let's say you want to access facebook.com (I'll discuss DNS in a moment - which is how names are translated into IP Addresses) What might happen?</p>
+
+            <p>You goto access facebook.com and you are routed to the IP Address 209.120.182.130. But wait you have not reached facebook.com, you've actually reached the entrance point into facebooks network. Once you reach 209.120.182.130 it routes you inside of it's own network to 192.168.0.200 and that's where facebook.com is accessible. This means facebook can have hundreds of thousands of IP's for all it's software, website etc all served off the one top level IP of 209.120.182.130.</p>
+
+            <p>This same approach happens on local networks, private networks etc etc. When you connect to the internet you are given an IP by your ISP, say 192.168.0.200 and you connect out through the ISP on 220.100.230.000. As you can see the same IP address 192.168.0.200 exists more than once on the internet, but clearly your laptop is not the same server as the facebook website.</p>
+
+            <p>But how does the internet know which IP Address to route to? If someone wants to access facebook.com why does it goto Facebook and not to your computer?</p>
+
+            <p>That's where DNS comes in. Domain Name System. DNS assigns human friendly names to IP Addresses. So facebook.com would equal 209.120.182.130. When you lookup facebook.com it takes you to that IP and from there that IP sends you to 192.168.0.200 WITHIN the facebook subnet.</p>
+
+            <p>As far as I can tell DNS is one of the few centrally managed "services" of the internet. Someone must be responsible for keeping track of all the web addresses and mapping there IP's. So that when people query a name it often first routes through these central name servers and then swims back into the tangled mix of public and private networks.</p>
+
+            <p>So yeah, that's the basics as I see it. I've probably made a fool of myself because it's far more complex, but maybe my view has been helpful for you to visualize the internet as more then a dump truck.</p>
+
+
+
+
+        </div>
+    </div>
+<div class="sidebar">
+     <ul>
+        <li><a href="index.html">Blog Index</a></li>
+      </ul>
+
+    </div>
+
+
+  </div>
+</body>
+</html>
