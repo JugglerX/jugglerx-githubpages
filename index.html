@@ -1,240 +1,220 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JugglerX GitHub</title>
+  <title>Robert Austin Github</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/prism.css">
-<script src="js/prism.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/slidebars.min.js"></script>
 </head>
-<body>
 
-<div id="header" style="background-image: url('images/pinetrees.jpeg');">
-  <div class="navigation">
-    <ul class="nav">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="blog/index.html" >Blog</a></li>
-    </ul>
-  </div>
-    <div class="page-title">
-        <h1>Dev Bootcamp / <span class="title-light">Robert Austin</a></h1>
-    </div>
-</div>
-
-<div id="middle">
-    <div class="content">
-
-       <div class="post">
-
-            <h2><a href="blog/c9-questions.html">How To Ask A Question</a></h2>
-            <p class="post-type">Apr 25th 2015 / Cultural Blog</p>
-
-            <p>Asking a good technical question actually takes quite a bit of practice. </p>
-
-            <p><strong>Be Prepared, Be Specific, Be Respectful</strong></p>
-            
-            <p>Asking a good question requires preperation. Before you ask a question, obviously you should search and research yourself. Most of the time you will find an answer.</p>
-
-            <p>If you cannot find the right answer, keep an eye of the articles and answers you do find. They may contain terminology, code examples or other comments that help you further refine your original question. Sometimes you realise you are searching for the wrong thing altogether.</p>
-
-        </div>
-
-       <div class="post">
-
-            <h2><a href="blog/c8-conflict.html">Conflict</a></h2>
-            <p class="post-type">Apr 17th 2015 / Cultural Blog</p>
-
-            <p>I recently had a conflict explode that had been brewing for quite some time. Perhaps it was petty, but it was an issue for me that 
-
-            <p>At my business, in the middle of the CBD there are limited car parks. My business is above a cafe and has a gravel small gravel parking area that I juggle to fit my staff and client parking into.</p> 
-
-
-            <p>But the same customer from the cafe downstairs started parking in this area EVERY DAY and would keep his car there for hours on end while he sipped coffee or went and did who knows what.</p>
-</div>
-
-<div class="post">
-
-            <h2><a href="blog/t8-tech.html">How the Internet Works (Har Har)</a></h2>
-            <p class="post-type">Apr 17th 2015 / Technical Blog</p>
-
-            <p>As you know, the internet is not a big truck. It's not something you just dump something on. it's a series of tubes.</p>
-
-            <p>How does all of that connect? How does information route through a network which is only semi planned and managed?</p>
-
-</div>
-
-        <div class="post">
-
-            <h2><a href="blog/c7-values.html">Values</a></h2>
-            <p class="post-type">Apr 12th 2015 / Cultural Blog</p>
-
-            <p>When you think of the times in your life where you’ve been the happiest, the proudest, or the most satisfied, which of the following values come to mind?</p>
-
-            <p>ambition, creativiy, friendships, pleasure, justice, wisdom</p>
-
-        </div>
-
-       <div class="post">
-
-            <h2><a href="blog/t7-JavaScript.html">Ruby Hashes VS JavaScript Objects</a></h2>
-            <p class="post-type">Apr 12th 2015 / Technical Blog</p>
-
-            <p>This week we learnt beginner JavaScript. Initially going to JavaScript from Ruby was a bit of a jolt. But I think that's because I'd just got used to the Ruby syntax.</p>
-
-            <p>In JavaScript the workhorses seem to be functions and objects. JavaScript has only 1 variable type, and it's global, so you rely more on scope.</p> 
-
-
-</div>
-
-<div class="post">
-<h2><a href="blog/c6-stereotype-threat.html">Stereotype Threat</a></h2>
-            <p class="post-type">Apr 5th 2015 / Cultural Blog</p>
-
-            <p>Stereotype threat is the concept in which people in minorities will take on the negative traits of a stereotype in certain situations.</p>
-
-            <p>Of particular concern is how sterotype threat affects the academic and career performance of racial miniorities and women.</p>
-
-</div>
-
-
-      <div class="post">
-
-            <h2><a href="blog/t6-oop-concepts.html">Variable Scope</a></h2>
-            <p class="post-type">Apr 5th 2015 / Technical Blog</p>
-
-            <p>Ruby has the following variables. Each variable type has a different <em>variable scope.</em></p>
-
-<pre><code class="language-ruby">
-  $global_var = 10
-  CONSTANT = 10
-  @@class_var = 10
-  @instance_var = 10
-  local_var = 10</code></pre>
-
-  <h3>Local Variables</h3>
-  <p>local variables have the most limited scope. They are limited to the method or loop in which they are declared. The location and depth of the local variable will determine inheritance. </p>
-</div>
-
-       <div class="post">
-        <h2><a href="blog/c5-feedback.html">Pairing & Feedback</a></h2>
-        <p class="post-type">March 30th 2015 / Cultural Blog</p>
-
-        <p>Pairing is enjoyable and I'm always keen to meet new members from my cohort. In that respect I think it's been great and it's helped  form a sense of community already.</p>
-
-        <p>Sometimes the pairing sessions don't help me learn the material or complete a challenge any faster then I would on my own, which frustrated me at the beginning. But I've since decided that pairing is beneficial for many reasons and it's a unique aspect of this course that I should embrace.</p>
-
-
-      </div>
-
-
-       <div class="post">
-
-            <h2><a href="blog/t5-ruby-classes.html">Classes</a></h2>
-            <p class="post-type">March 29th 2015 / Technical Blog</p>
-
-            <p>Classes are like groups. Classes allow you to define methods and variables inside of them and reuse them across multiple objects.</p>
-
-<pre><code class="language-ruby">
-  class Person
-    def name
-      name = "Rob"
-    end
-  end</code></pre>
-
-</div>
-
-
-       <div class="post">
-
-            <h2><a href="blog/c4-tech-issues.html">Regulation</a></h2>
-            <p class="post-type">March 22nd 2015 / Cultural Blog</p>
-
-            <p>This week we've been asked to research and provide our opinion on an issue facing the tech industry. I feel regulation is the largest looming threat to technology.</p>
-
-            <p>Most would agree that regulation stifles innovation, but that some degree of regulation is needed to stop "bad things happening".</p>
-
-        </div>
-
-
-      <div class="post">
-
-            <h2><a href="blog/c4-tech-issues.html">Ruby .map Method</a></h2>
-            <p class="post-type">March 22nd 2015 / Technical Blog</p>
-
-            <p>Ruby provides various methods to iterate over arrays and hashes. The array and hash classes both come with the <code class="language-none">#each</code> method which you are probably familiar with.</p>
-
-<pre><code class="language-ruby">
-array = [1,2,3,4]
-array.map { |i| i * i }
-#=> [1, 4, 9, 16]</code>
-</pre>
-
-        </div>
-
-<div class="post">
-
-            <h2><a href="blog/c3-thinking-style.html">Thinking Style</a></h2>
-            <p class="post-type">March 15th 2015 / Culture Blog</p>
-
-
-<p>How do I Think? And how is it affecting my learning competency so far at DBC?</p>
-
-<p>Well according to the "test" they made me take, I'm a multi modal learner. But I don't really put much stock in those 10 minute pseudo psych tests where you can tell how each answer will classify you.</p>
-</div>
-
-<div class="post">
-    <h2><a href="blog/t3-arrays-hashes.html">Yarrr, Arrays & Hashes</a></h2>
-
-    <p class="post-type">March 15th 2015 / Technical Blog</p>
-
-    <p>Arrays and hashes store collections of objects. Objects in the array can then be accessed in various ways depending on your requirements.</p>
-  </div>
-
-    <div class="post">
-    <h2><a href="blog/t2-css-design.html">CSS Positioning</a></h2>
-    <p class="post-type">March 8th 2015 / Technical Blog</p>
-
-    <p>Relative, absolute and fixed positioning are probably one of the more difficult concepts to grasp in CSS, so here's my take on things.</p>
-
-  </div>
-
-
-      <div class="post">
-
-        <h2><a href="blog/c1-chefs-kitchen.html">The DBC Culture</a></h2>
-        <p class="post-type">March 1st 2015 / Cultural Blog</p>
-
-        <p>The culture at DBC seems to have a large focus on personal development, not just technical learning. Many of the videos and articles I have read so far during the interview and Pahse 0 have an almost spiritual slant.</p>
-      </div>
-
-      <div class="post">
-         <h2><a href="blog/t1-git-blog.html">Like a Version</a></h2>
-         <p class="post-type">February 27th 2015 / Technical Blog</p>
-    <p>
-      Think about some of the greatest musicians of all time. Bob Dylan, Bob Marley, Deadmau5 (to be decided). What have they got in common? Their songs have all been covered and remixed dozens of times. People take their work and create derivitave works, sometimes better, sometimes worse.
-    </p>
-
-
-      </div>
+<body class="">
+
+<div id="sb-site">
+
+  <div class="region header">
+    <div class="region-inner">
+        
+        <!-- <div class="sb-toggle-left"><i class="fa fa-bars"></i></div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+        </ul> -->
 
     </div>
+  </div>
 
-    <div class="sidebar">
+  <div class="region featured">
+    <div class="region-inner">
+        
       <div class="profile">
-        <img src="images/rob.jpg"/>
-        <ul>
-          <li><strong>Robert Austin</strong></li>
-          <li>Brisbane, Australia <br><br></li>
-          <li><strong>Email:</strong> <a href="mailto:rob@jugglerdigital.com">rob@jugglerdigital.com</a></li>
-          <li><strong>Skype: </strong> jugglerdigital</li>
-          <li><strong>Github: </strong> <a href="https://github.com/JugglerX">https://github.com/JugglerX</a></li>
-        </ul>
+        <img src="images/profile.jpg"/>
+        <h1>Robert Austin / <span>Front-End Engineer</a></h1>
+        <h2>UX/UI / Product Designer</h2>
+        <a href="mailto:rob@jugglerdigital.com">rob@jugglerdigital.com</a>
+      </div>
 
+      <ul class="socialmedia">
+        <li class="github"><a href="https://github.com/JugglerX"></a></li>
+        <li class="linkedin"><a href="https://au.linkedin.com/in/ausrobert"></a></li>
+      </ul>
+      
     </div>
+  </div>
+
+  <div class="region middle">
+    <div class="region-inner">
+
+        <div class="callout">I'm an experienced Front-end Engineer with a broad range of supporting skills including UX, Product design, Data analysis and management. I recently moved to San Francisco and graduated from <a href="http://www.devbootcamp.com">Dev Boot Camp</a>. I love to code and I bring alot to the team. I can move up or down the stack and bridge gaps between the product, the user and the back-end engineering team.</div>
+
+        <div class="well well-primary"><strong>Note:</strong> All work in my portfolio is primarly built by me within the last 2 years. </div>
+
+        <div class="portfolios">
+          
+          <div class="portfolio-row">
+
+            <h2 class="portfolio-section">Ruby / JS Apps</h2>
+            <div class="portfolio">   
+              <h3><a href="http://dbc-syndicate.herokuapp.com" target="_blank">Syndicate</a> <i class="fa fa-external-link"></i></h3>
+              <p class="portfolio-type">Live Voting App</p>
+              <p>A live liquid voting app built with Ruby on Rails, JS, jQuery, Firebase and Google Oauth. </p>
+            </div>
+
+            <div class="portfolio">
+              <h3><a href="http://beermate.herokuapp.com" target="_blank">Beermate</a> <i class="fa fa-external-link"></i></h3>
+              <p class="portfolio-type">Beer API / Rating App</p> 
+              <p>A simple beer search and rating system built with Ruby, Sinatra, JS and the BreweryDB API.</p>
+            </div>
+
+            <div class="portfolio">
+              <h3>Activerecord Schema Designer</h3>
+              <p class="portfolio-type">Visually represent your DB schema</p> 
+              <p>A ruby gem that renders an interactive visualisation of your projects database and activerecord associations.</p>
+            </div>
+
+          </div>
+
+          <div class="portfolio-row">
+
+            <h2 class="portfolio-section">Drupal Design & Development</h2>
+            <p>I have over 5 years experience managing, designing and developing enterprise Drupal websites. </p>
+
+            <div class="portfolio">
+              <h3><a href="http://www.worldsurfaris.com" target="_blank">World Surfaris</a> <i class="fa fa-external-link"></i></h3>
+              <p class="portfolio-type">Australia's Largest Surf Travel Website</p>
+              <p>Drupal architecture, design and development, custom theme, custom modules, multi country, e-commerce</p>
+            </div>
+
+            <div class="portfolio">
+              <h3><a href="http://rockcote.com.au/" target="_blank">Rockcote</a>  <i class="fa fa-external-link"></i></h3>
+              <p class="portfolio-type">Australia's Largest Render Manufacturer</p>        
+              <p>Drupal architecture, design and development, custom theme, custom modules, e-commerce</p>
+            </div>
+
+            <div class="portfolio">
+              <h3><a href="http://www.mrwed.edu.au/" target="_blank">MRWED</a>  <i class="fa fa-external-link"></i></h3>
+              <p class="portfolio-type">Australia's Leading Trainer VET</p>
+              <p>Drupal architecture, design and development, custom theme, custom modules, e-commerce</p>
+            </div>
+
+          </div>
 
 
+          <div class="portfolio-row">
 
+            <h2 class="portfolio-section">Opensource Projects</h2>
+          
+            <div class="portfolio"> 
+              <h3><a href="https://github.com/JugglerX/paradigm">Paradigm .LESS Framework</a> <i class="fa fa-external-link"></i></h3>
+              <p class="portfolio-type">Grid System & Framework</p>
+              <p>My personal framework used extensively on Drupal websites now ported to work with any app.</p>
+            </div>
+
+          </div>
+
+          
+          <div class="portfolio-row">
+            
+            <h2 class="portfolio-section">User Interface Design</h2>
+            
+            <div class="portfolio">
+              <h3><a href="http://demo.atmail.com/index.php/mail" target="_blank">Atmail Webmail UI</a>  <i class="fa fa-external-link"></i></h3>
+              <p class="portfolio-type">Webmail competitor to Gmail with tens of millions of users</p>
+              <p>UI, HTML/CSS prototypes and ongoing front end development</p>
+            </div>
+
+            <div class="portfolio">
+              <h3><a href="portfolio/leagle-ui.png">Leagle App UI</a></h3>
+              <p class="portfolio-type">Family Law app to self manage seperations</p>        
+              <p>Product design, UX, UI prototyping with Sketch and Invision</p>
+            </div>
+
+            <div class="portfolio">
+              <h3><a href="portfolio/spring-ui.png">Spring App UI</a></h3>
+              <p class="portfolio-type">Experimental email client with tasks and project management</p>
+              <p>Product design, UX, UI prototyping with Sketch and Invision</p>
+            </div>
+
+            <div class="portfolio">
+              <h3><a href="portfolio/pemsoft-ui.png">Pemsoft UI</a></h3>
+              <p class="portfolio-type">Pediatric medical software with strong accessibility requirements</p>
+              <p>Accessibility, UX, UI, HTML/CSS and front end development</p>
+            </div>
+
+            <div class="portfolio">
+              <h3><a href="portfolio/ferrosapien-ui.png">Ferrosapien Sports UI</a></h3>
+              <p class="portfolio-type">Sports Training Mobile UI</p>
+              <p>Product design, UX, UI prototyping with Sketch and Invision</p>
+            </div>
+
+          </div>
+
+          <div class="portfolio-row">
+
+            <h2 class="portfolio-section">Analytics & Data Driven Marketing</h2>
+          
+            <div class="portfolio"> 
+              <h3>Google Adwords Certified</h3>
+              <p class="portfolio-type"></p>
+              <p>7 years experience in SEM. Campaign management for accor hotels group, westin hotel group +</p>
+            </div>
+
+            <div class="portfolio"> 
+              <h3>Google Analytics Qualifed</h3>
+              <p class="portfolio-type"></p>
+              <p>Complex tracking solutions, custom ga.js, tracking architecture and reporting</p>
+            </div>
+
+            <div class="portfolio"> 
+              <h3>Mailchimp / Mandrill</h3>
+              <p class="portfolio-type"></p>
+              <p>Email templates, best practice delivery, automation, drip lists, API integration</p>
+            </div>
+
+            <div class="portfolio"> 
+              <h3>Conversion Optimisation</h3>
+              <p class="portfolio-type"></p>
+              <p>Conversion optimisation, split testing etc. Optimizly, Unbounce, Google Website Optimizer, custom brews</p>
+            </div>
+
+          </div>
+
+          
+
+          <div class="portfolio-row">
+
+            <h2 class="portfolio-section">Other Work</h2>
+          
+            <ul>
+              <li><a href="http://www.4ingredients.com.au">4 Ingredients</a> <span>E-commerce website for a cook book company with over 8 million copies sold. The website handles thousands of sales every month.</span></li>
+              <li><a href="https://glidr.io/">Glider Tablet Email App</a> <span>A startup style single page website for an tablet based email app</li>
+              <li><a href="">MailOS Email API Documentation</a><span> Styleguide and API documentation for MailOS, an email API layer</li>
+              <li><a href="https://www.scla.org.au/">Sunshine Coast Law Association</a> <span>Automates membership payments, events and more for over 200 lawyers</span></li>
+              <li><a href="https://www.digitalsunshinecoast.com.au/">Digital Sunshine Coast</a> <span>News, Knowledge base and Advocacy website for local council's digital economy initative</span></li>
+              <li><a href="http://www.tomwegenersurfboards.com">Tom Wegener Surfboards</a> <span>The legendary, master surfboard shaper</span></li>
+              <li><a href="https://github.com/JugglerX/stack-overflow">Stack Overflow Clone</a> <span>Rails clone of Stack Overflow, DBC Project</span></li>
+              <li><a href="https://github.com/JugglerX/connect-four">https://github.com/JugglerX/connect-four</a></li>
+            </uL>
+
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End Middle -->
+
+</div>
+<!-- End Menu Wrapper -->
+
+  <div class="sb-slidebar sb-left sb-momentum-scrolling">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+      </ul>
   </div>
 
 </body>
