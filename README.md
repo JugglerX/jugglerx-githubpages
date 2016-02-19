@@ -1,5 +1,5 @@
-# DBC Portfolio Template
+# Robert Austin Portfolio Template
 
-A simple Portfolio template to use on your github.io
+A portfolio, of sorts.
 
 
