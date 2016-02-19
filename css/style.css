@@ -2331,17 +2331,21 @@ hr,
 }
 .callout {
   text-align: center;
-  width: 70%;
   margin: 0 auto;
-  font-size: 18px;
-  padding: 20px 20px 40px 20px;
+  width: 80%;
 }
 @media only screen and (max-width : 768px) {
   .callout {
-    padding: 10px 0 30px 0;
+    width: 100%;
+  }
+}
+.callout p {
+  font-size: 17px;
+}
+@media only screen and (max-width : 768px) {
+  .callout p {
     font-size: 16px;
-    line-height: 26px;
-    width: 80%;
+    line-height: 24px;
   }
 }
 /* 
